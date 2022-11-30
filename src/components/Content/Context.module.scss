@@ -1,0 +1,7 @@
+.country__list{
+    display: grid;
+    width: 47vw;
+    grid-template-columns: repeat(3, 200px);
+    margin: 50px auto;
+    grid-gap: 20px;
+}

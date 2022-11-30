@@ -1,0 +1,14 @@
+{
+    "countries":
+    [
+        { "id": "1", "title": "Kyrgyzstan", "flag": "https://www.worldometers.info/img/flags/small/tn_kg-flag.gif" },
+        { "id": "2", "title": "Kazakhsan", "flag": "https://www.worldometers.info/img/flags/small/tn_kz-flag.gif" },
+        { "id": "3", "title": "Litvia", "flag": "https://www.worldometers.info/img/flags/small/tn_lg-flag.gif" },
+        { "id": "4", "title": "Brazil", "flag": "https://www.worldometers.info/img/flags/small/tn_br-flag.gif" },
+        { "id": "5", "title": "Madagaskar", "flag": "https://www.worldometers.info/img/flags/small/tn_ma-flag.gif" },
+        { "id": "6", "title": "Japan", "flag": "https://www.worldometers.info/img/flags/small/tn_ja-flag.gif" },
+        { "id": "7", "title": "Russai", "flag": "https://www.worldometers.info/img/flags/small/tn_rs-flag.gif" },
+        { "id": "8", "title": "U.S.A", "flag": "https://www.worldometers.info/img/flags/small/tn_us-flag.gif" },
+        { "id": "9", "title": "China", "flag": "https://www.worldometers.info/img/flags/small/tn_ch-flag.gif" }
+      ]
+}
