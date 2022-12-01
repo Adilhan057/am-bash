@@ -12,24 +12,25 @@ export const App = () => {
 
   const [items, setItems] = React.useState([  ])
   const [searchItem, setSearchItem] = React.useState('')
+  const [parametr, setParametr] = React.useState('asd')
 
   React.useEffect( () => {
     const fetchCountries = async() => {
-      const res = await axios.get(`http://localhost:3000/countries`)
+      const res = await axios.get(`https://6386df5de399d2e473eed691.mockapi.io/items?sortBy=price&order=${parametr}&search=${searchItem}`)
       setItems(res.data)
     }
     fetchCountries()
-  }, [])
+  }, [searchItem, parametr])
 
 
   return (
     <SearchContext.Provider value={ {searchItem, setSearchItem, items} }>
       <div className="conteiner"> 
-        <Header />
+        <Header setParametr={setParametr} />
         <Routes>
-          <Route path='/' element></Rou>
+          <Route path='/' element={<Content />}></Route>
         </Routes>
-        <Content />
+        {/* <Content /> */}
       </div>
     </SearchContext.Provider>
   )

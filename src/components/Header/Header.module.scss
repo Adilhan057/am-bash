@@ -17,4 +17,13 @@
             display: flex;
         justify-content: space-between;
     }
+
+    &__sort{
+        padding: 7px;
+        margin: 0 3px;
+        background: #fff;
+        border-radius: 10px;
+        border: 1px solid #848181;
+        cursor: pointer;
+    }
 }

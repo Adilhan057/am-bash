@@ -7,19 +7,21 @@ export const Content = () => {
  
   const {items, searchItem} = React.useContext(SearchContext);
 
-  const countries = 
-  items
-    .filter( item => {
-        if(item.title.toLowerCase().includes(searchItem)){
-          return item
-        }
-    })
-    .map(item => <CountryItem {...item} />)
+  // const countries = 
+  // items
+  //   .filter( item => {
+  //       if(item.title.toLowerCase().includes(searchItem)){
+  //         return item
+  //       }
+  //   })
+  //   .map(item => <CountryItem {...item} />)
 
   return (
     <div className={s.country__list}>
       {
-        countries
+        items.map(item => {
+          return(<CountryItem {...item} />)
+        })
       }
     </div>
   )
