@@ -1,8 +1,11 @@
 import React from 'react'
+import { useContext } from 'react'
+import { SearchContext } from '../App'
 import s from './Header.module.scss'
 import { Input } from './Input'
 
-export const Header = (setParametr) => {
+export const Header = () => {
+    const {setParametr} = useContext(SearchContext)
     return (
         <div className={s.header}>
             <div className={s.header__logo}>
